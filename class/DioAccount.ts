@@ -9,11 +9,6 @@ export abstract class DioAccount {
     this.accountNumber = accountNumber;
   }
 
-  setName = (name: string): void => {
-    this.name = name;
-    console.log('Nome alterado com sucesso!');
-  };
-
   getName = (): string => {
     return this.name;
   };
@@ -37,7 +32,7 @@ export abstract class DioAccount {
     return this.balance;
   };
 
-  private validateStatus = (): boolean => {
+  validateStatus = (): boolean => {
     if (this.status) {
       return this.status;
     }
